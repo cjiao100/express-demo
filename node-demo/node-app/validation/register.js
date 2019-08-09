@@ -21,11 +21,11 @@ module.exports = function validatorRegisterInput(data) {
   if (Validator.isEmpty(data.name)) {
     errors.name = '名字不能为空';
   }
-  if (Validator.isEmpty(data.email)) {
-    errors.email = '邮箱不能为空';
-  }
   if (!Validator.isEmail(data.email)) {
     errors.email = '邮箱不合法';
+  }
+  if (Validator.isEmpty(data.email)) {
+    errors.email = '邮箱不能为空';
   }
   if (Validator.isEmpty(data.password)) {
     errors.password = '密码不能为空';
