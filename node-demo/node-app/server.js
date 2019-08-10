@@ -5,8 +5,17 @@ const passport = require('passport');
 
 const app = express();
 const users = require('./routes/api/user');
+const profile = require('./routes/api/profile');
 const db = require('./config/keys').mongoURI;
 const port = process.env.PORT || 5000;
+
+// 使用中间件允许跨域
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Headers', 'Content-Type');
+  res.header('Access-Control-Allow-Methods', 'PUT,POST,GET,DELETE,OPTIONS');
+  next();
+});
 
 // 使用bodyParser
 app.use(
@@ -23,6 +32,7 @@ app.use(passport.initialize());
 require('./config/passport')(passport);
 
 app.use('/api/users', users);
+app.use('/api/profile', profile);
 
 // 连接数据库
 mongoose
