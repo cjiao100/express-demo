@@ -36,7 +36,7 @@ app.use('/api/profile', profile);
 
 // 连接数据库
 mongoose
-  .connect(db, { useNewUrlParser: true })
+  .connect(db, { useNewUrlParser: true, useFindAndModify: false })
   .then(() => console.log('MongoDB Connected'))
   .catch(err => console.log(err));
 

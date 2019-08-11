@@ -19,9 +19,6 @@ module.exports = function validatorLoginInput(data) {
     errors.password = '密码不能为空';
   }
 
-
-  console.log(errors)
-
   return {
     errors,
     isValid: isEmpty(errors)
