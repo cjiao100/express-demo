@@ -31,7 +31,7 @@ nodemon（监听文件变化自动更新文件）
 VSCode、postman、cmder
 
 ## 项目目录
-
+<pre>
 +-- config
 |   +-- keys.js
 |   +-- passport.js
@@ -58,3 +58,4 @@ VSCode、postman、cmder
 +-- .gitignore
 +-- README.md
 +-- LICENSE
+</pre>
