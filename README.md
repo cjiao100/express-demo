@@ -62,5 +62,7 @@ VSCode、postman、cmder
 
 ## 运行
 > git clone xxx.git
+
 > npm install
+
 > npm run server || npm run start
