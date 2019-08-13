@@ -61,7 +61,7 @@ VSCode、postman、cmder
 </pre>
 
 ## 运行
-> git clone xxx.git
+> git clone https://github.com/cjiao100/express-demo.git
 
 > npm install
 
