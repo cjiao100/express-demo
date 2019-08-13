@@ -59,3 +59,8 @@ VSCode、postman、cmder
 +-- README.md
 +-- LICENSE
 </pre>
+
+## 运行
+> git clone xxx.git
+> npm install
+> npm run server || npm run start
